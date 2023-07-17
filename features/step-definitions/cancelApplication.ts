@@ -11,5 +11,6 @@ When(/^User cancel the application$/, async () => {
 });
 
 Then(/^A flash message should appear$/, async () => {
-    await CancelApplication.flashMessage();
+    await CancelApplication.isFlashMessagePresent();
+    await CancelApplication.getFlashMessage();
 });

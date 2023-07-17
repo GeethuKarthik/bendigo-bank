@@ -1,7 +1,7 @@
 class BendigoHomePage {
 
   public async openHomePage () {
-    return await browser.url("https://www.bendigobank.com.au/");
+    await browser.url("https://www.bendigobank.com.au/");
   }
   public async selectBanking() {
     return await $("button[name='banking']").click();
