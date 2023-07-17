@@ -1,13 +1,13 @@
 class BendigoHomePage {
 
   public async openHomePage () {
-    return  browser.url("https://www.bendigobank.com.au/");
+    return await browser.url("https://www.bendigobank.com.au/");
   }
   public async selectBanking() {
-    return $("button[name='banking']").click();
+    return await $("button[name='banking']").click();
   }
   public async chooseCreditCard() {
-    return $('=Credit cards').click();
+    return await $('=Credit cards').click();
   }
 }
 
