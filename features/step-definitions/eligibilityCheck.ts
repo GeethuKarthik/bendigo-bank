@@ -2,7 +2,7 @@ import { Given, When, Then } from '@wdio/cucumber-framework';
 import CreditCardSelectionPage from '../pageobjects/creditCards';
 import CheckMyEligibilityPage from '../pageobjects/checkMyEligibility';
 
-
+// checking eligibility
 Given(/^I am on check my eligibility page$/, async () => {
     await expect(browser).toHaveUrl('https://www.bendigobank.com.au/personal/credit-cards/check-my-eligibility/?ccproduct=bright');
 });
