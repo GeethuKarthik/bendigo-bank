@@ -1,5 +1,5 @@
 class CancelApplication {
-
+ // Cancel application code
   public async cancelApplication() {
     await $("button[name='cancelBtn']").click();
     return await $("button[name='confirmYes']").click();
